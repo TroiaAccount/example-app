@@ -38,20 +38,23 @@
     <header>
         <div class="header_div">Logo</div>
         <div class="header_div">
-            <a class="header_a" href="{{Route('authPage')}}">Auth</a>
-            <a class="header_a" href="{{Route('registerPage')}}">Register</a>
+            <a class="header_a" href="{{ Route('authPage') }}">Auth</a>
+            <a class="header_a" href="{{ Route('registerPage') }}">Register</a>
         </div>
     </header>
     <form class="form_class">
         <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                 placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
             <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Re-password</label>
+            <input type="password" name="repassword" class="form-control" id="exampleInputPassword1" placeholder="re-password">
         </div>
         <div class="form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -62,3 +65,4 @@
 </body>
 
 </html>
+s
